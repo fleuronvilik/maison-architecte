@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!doctype html>
 <html>
 
   <head>
@@ -6,10 +6,10 @@
     <meta charset="utf-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>La maison de l'architecte</title>
-    <meta name="description" content="Le site de la maison de l'architecture">
+    <meta name="description" content="Le nouveau site de la maison de l'architecture">
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -36,7 +36,7 @@
       }
 
     </style>
-
+    <title>La maison de l'architecte</title>
   </head>
 
   <body id="page-top">
@@ -56,41 +56,43 @@
     </header>
 
     <!-- Caroussel
-    ================================================== -->
+    ================================================== 
     <img src="assets/img/archi1.jpg" alt="Architecture">
     <img src="assets/img/archi2.jpg" alt="Architecture">
     <img src="assets/img/archi3.jpg" alt="Architecture">
     <img src="assets/img/archi4.jpg" alt="Architecture">
-
+    -->
     <!-- Corps de page déjà codé
     ================================================== -->
     <div class="container">
 
-      <div class="jumbotron row" id="accueil">
-        <h1 class="text-center">Bienvenue dans notre espace</h1>
-        <img class="col-sm-12 col-md-5" src="assets/img/accueil.jpg" alt="Accueil">     
-        <p class="col-sm-12 col-md-7">Nous sommes spécialisés dans tous types de constructions et nous prenons en charge les projets de A à Z. Vous pouvez nous confier en toute confiance des projets de toutes dimensions, des plus simples aux plus osés. Notre équipe est efficace, réactive et compétente. Nous entretenons toujours un dialogue de tous les instants avec nos clients. Bien qu'à la pointe de notre activité nous pratiquons des prix rigoureux et adaptés à tous les budgets.</p>
+      <div class="jumbotron row align-items-start" id="accueil">
+        <h1 class="col-12 text-center">Bienvenue dans notre espace</h1>
+        <img class="col-md-5" src="assets/img/accueil.jpg" alt="Accueil">     
+        <p class="col-md-7">Nous sommes spécialisés dans tous types de constructions et nous prenons en charge les projets de A à Z. Vous pouvez nous confier en toute confiance des projets de toutes dimensions, des plus simples aux plus osés. Notre équipe est efficace, réactive et compétente. Nous entretenons toujours un dialogue de tous les instants avec nos clients. Bien qu'à la pointe de notre activité nous pratiquons des prix rigoureux et adaptés à tous les budgets.</p>
       </div>
 
-      <div class="jumbotron row" id="qui">
-        <h1 class="text-center">Une équipe efficace</h1>
-        <img class="col-sm-12 col-md-5 col-md-push-7" src="assets/img/equipe.jpg" alt="Equipe"> 
-        <p class="col-sm-12 col-md-7 col-md-pull-5">Notre équipe est jeune, experte et motivée. Notre entreprise est certifiée ISO 9001. Nous cherchons en permanence à améliorer la qualité de nos services et nous sommes à l'écoute de nos clients.</p>
+      <div class="jumbotron row align-items-start" id="qui">
+        <h1 class="col-12 text-center">Une équipe efficace</h1>
+        <img class="col-md-5 col-md-push-7" src="assets/img/equipe.jpg" alt="Equipe"> 
+        <p class="col-md-7 col-md-pull-5">Notre équipe est jeune, experte et motivée. Notre entreprise est certifiée ISO 9001. Nous cherchons en permanence à améliorer la qualité de nos services et nous sommes à l'écoute de nos clients.</p>
       </div>
 
-      <div class="jumbotron" id="contact">
-        <h1 class="text-center">Un message pour nous ?</h1>
-        <form class="row">
-          <div class="form-group col-lg-4">
-            <input type="email" class="form-control" placeholder="Votre email">
-          </div>
-          <div class="form-group col-lg-8">
-            <textarea class="form-control" rows="3" placeholder="Votre message"></textarea>
-          </div>
-          <div class="form-group col-lg-12">
-            <button type="submit" class="btn btn-default pull-right">Envoyer</button>
-          </div>
-        </form>
+      <div class="jumbotron row" id="contact">
+        <h1 class="col-12 text-center">Un message pour nous ?</h1>
+        <div class="col-12">
+          <form class="row">
+            <div class="form-group col-lg-4">
+              <input type="email" class="form-control" placeholder="Votre email">
+            </div>
+            <div class="form-group col-lg-8">
+              <textarea class="form-control" rows="3" placeholder="Votre message"></textarea>
+            </div>
+            <div class="form-group col-lg-12">
+              <button type="submit" class="btn btn-default pull-right">Envoyer</button>
+            </div>
+          </form>
+        </div>
       </div>
 
     </div>
@@ -105,10 +107,11 @@
       <a class="btn btn-default" href="#"><i class="fa fa-spotify fa-2x"></i></a>
     </footer>
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <!-- Javascript de Bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script>
       // Scrollspy fluide
